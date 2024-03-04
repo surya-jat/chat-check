@@ -1,0 +1,18 @@
+{
+  "name": "chat-irp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kailash Dusad",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.0",
+    "pug": "^3.0.2",
+    "socket.io": "^4.7.4"
+  }
+}
