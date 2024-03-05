@@ -35,4 +35,4 @@ jobs:
       run: npx webpack
 
     - name: Display npm install log
-      run: cat /home/runner/.npm/_logs/2024-03-05T10_40_57_945Z-debug.log
+      run: cat /home/runner/.npm/_logs/*-debug.log | tail -n 100
