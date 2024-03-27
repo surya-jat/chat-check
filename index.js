@@ -31,7 +31,14 @@ app.use("/static", express.static("static"));
 app.use(express.urlencoded());
 const server = http.createServer(app);
 
-const io = socketIO(server);
+const io = socketIO(server, {
+  cors: {
+    // origin: 'http://10.7.25.100',
+    origin: '*',
+    //  credentials: true,
+    methods: ["GET", "POST"],
+  }
+});
 
 app.get("/", (req, res) => {
   res.status(200).render("home.pug");
