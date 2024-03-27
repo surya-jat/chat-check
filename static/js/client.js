@@ -4,7 +4,7 @@
 // By adding the js file --> http://localhost:8000/socket.io/socket.io.js
 // We are now connected to the socket server
 
-const socket = io('localhost:5001');
+const socket = io('http://localhost:5001');
 const form = document.getElementById('message-sender');
 const messageInput = document.getElementById('message');
 
