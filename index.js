@@ -34,7 +34,7 @@ const server = http.createServer(app);
 const io = socketIO(server, {
   cors: {
     // origin: 'http://10.7.25.100',
-    origin: '*',
+    origin: 'https://chat-check-tt5h.onrender.com/',
     //  credentials: true,
     methods: ["GET", "POST"],
   }
